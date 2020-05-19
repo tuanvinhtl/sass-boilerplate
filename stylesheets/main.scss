@@ -4,11 +4,13 @@
 @import
   'abstracts/variables',
   'abstracts/functions',
-  'abstracts/mixins';
+  'abstracts/mixins',
+  'abstracts/placeholders';
 
 // 2. Vendors
 @import
-  'vendors/normalize';
+  'vendors/normalize',
+  'vendors/vendors-extensions/bootstrap';
 
 // 3. Base stuff
 @import
@@ -20,10 +22,14 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/grid',
+  'layout/main',
   'layout/footer';
 
 // 5. Components
 @import
+  'components/feature-item',
+  'components/contact-menu',
   'components/button';
 
 // 6. Page-specific styles

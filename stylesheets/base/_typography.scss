@@ -2,6 +2,36 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
+  color: $panther-color;
   font: normal 125% / 1.4 $text-font-stack;
+}
+
+h1{
+  font-size: 80px;
+  font-weight: 500;
+  color: $dark-blue-color;
+}
+h2{
+  font-size: 40px;
+  font-weight: 500;
+  color: $panther-color;
+  letter-spacing: 0.05em
+}
+h3{
+  font-size: 30px;
+  font-weight: 500;
+  color: $panther-color;
+  letter-spacing: 0.05em
+}
+h4{
+  font-size: 20px;
+  font-weight: 500;
+  color: $panther-color;
+}
+
+.text-body{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
 }

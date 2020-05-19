@@ -1,0 +1,225 @@
+// Flex layouts
+%flex {
+    display: flex;
+  }
+  
+  %row {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+  }
+  
+  %column {
+    display: flex;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+  }
+  
+  %align-center {
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+  }
+  
+  %align-start {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  %align-end {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+  
+  %flex-start {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+  
+  %flex-center {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  
+  %flex-end {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+  }
+  
+  %wrap {
+    flex-wrap: wrap;
+  }
+  
+  // Alignment
+  %align-default {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+  }
+  
+  %layout-row {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+  }
+  
+  %layout-row-stretch {
+    display: flex;
+    flex: 1;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+  }
+  
+  %layout-column {
+    display: flex;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+  }
+  
+  %layout-column-stretch {
+    display: flex;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+  }
+  
+  %align-start-start {
+    @extend %align-default;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  %align-center-start {
+    @extend %align-default;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  %align-start-center {
+    @extend %align-default;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+  }
+  
+  %align-end-start {
+    @extend %align-default;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  %align-start-end {
+    @extend %align-default;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+  
+  %align-center-center {
+    @extend %align-default;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+  }
+  
+  %align-center-end {
+    @extend %align-default;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+  
+  %align-end-center {
+    @extend %align-default;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+  }
+  
+  %align-end-end {
+    @extend %align-default;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+  
+  // General layouts
+  %absolute-match-parent {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  %content-stretch {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  
+  %no-background {
+    background: transparent;
+    border: none;
+  }
+  
+  // No text select
+  %avoid-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  }
+  
+  // Common
+  %no-outline {
+    outline: none;
+  }
+  
+  %absolute-match-parent {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  %border{
+    border: 1px solid red;
+  }

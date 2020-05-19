@@ -2,13 +2,9 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
-
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Roboto', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -17,37 +13,36 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 
 
+// /// Copy text color
+// /// @type Color
+// $text-color: rgb(34, 34, 34) !default;
 
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
+// /// Main brand color
+// /// @type Color
+// $brand-color: rgb(229, 0, 80) !default;
 
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+// /// Light grey
+// /// @type Color
+// $light-grey: rgb(237, 237, 237) !default;
 
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+// /// Medium grey
+// /// @type Color
+// $mid-grey: rgb(153, 153, 153) !default;
 
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
+// /// Dark grey
+// /// @type Color
+// $dark-grey: rgb(68, 68, 68) !default;
 
 
+$panther-color:rgb(70,72,77) !default;
+$dolphin-color:rgb(237,237,237) !default;
+$mouse-color:rgb(247,247,247) !default;
+$dark-blue-color:rgb(37,124,191) !default;
 
 
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
 
 
 /// Breakpoints map
@@ -60,12 +55,21 @@ $breakpoints: (
 ) !default;
 
 
-
-
-
-
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+
+// FONT SIZE
+$default-font-size: 1.6rem;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+$viewport:80%;
+

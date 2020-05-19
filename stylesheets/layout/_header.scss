@@ -1,3 +1,30 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header {
+    height: 60px;
+    width: 100%;
+    background: #113A59;
+    align-items: center;
+    display: flex;
+    &__layout{
+        width: $viewport;
+        margin: 0 auto;
+    }
+
+    &__logo-box{
+        text-align: start;
+    }
+    &__tool-box{
+        text-align: end;
+    }
+
+    &__gwraper{
+        height: 100%;
+        width: 1500px;
+        margin: 0 auto;
+
+        @extend %border
+    }
+}
+  
